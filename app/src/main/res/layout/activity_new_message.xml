@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/subview"
+    android:orientation="vertical" >
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="133dp"
+        android:layout_height="50dp"
+        android:src="@drawable/abc_ic_voice_search_api_mtrl_alpha"
+        android:contentDescription="@string/image"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_weight="0.59"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="@string/hint"
+        android:textColor="#FFF" >
+
+        <requestFocus />
+    </EditText>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:columnCount="3" >
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="90dp"
+            android:layout_height="50dp"
+            android:layout_column="0"
+            android:layout_gravity="left|top"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_row="0"
+            android:contentDescription="@string/image"
+            android:src="@mipmap/correct" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="90dp"
+            android:layout_height="50dp"
+            android:layout_column="2"
+            android:layout_gravity="left|top"
+            android:layout_marginTop="10dp"
+            android:layout_row="0"
+            android:contentDescription="@string/image"
+            android:src="@mipmap/wrong" />
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_column="1"
+            android:layout_gravity="left|top"
+            android:layout_row="0"
+            android:src="@mipmap/ic_collections_cloud"
+            android:contentDescription="@string/image"
+            android:layout_width="90dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"/>
+
+    </GridLayout>
+
+</LinearLayout>

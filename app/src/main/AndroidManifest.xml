@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tharu.voicetotext" >
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_SMS"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".sms.NewMessage" />
+        <activity android:name=".backup.BackupActivity" />
+        <activity android:name=".sms.CreateDraftActivity" />
+        <activity android:name=".sms.DatabaseHandlerActivity" />
+        <activity android:name=".sms.DeleteMessage" />
+        <activity android:name=".sms.DraftActivity" />
+        <activity android:name=".sms.DraftInboxActivity" />
+        <activity android:name=".sms.FileOperations" />
+        <activity android:name=".sms.MessageSend" />
+        <activity android:name=".sms.ReadActivity" />
+        <activity android:name=".backup.ReadMail" />
+        <activity android:name=".sms.SearchContactNumber" />
+        <activity android:name=".sms.SearchMessage" />
+        <activity android:name=".sms.SecurityAutentication" />
+        <activity android:name=".sms.SecurityLayoutActivity" />
+        <activity android:name=".sms.SecurityOptions" />
+        <activity android:name=".sms.SendDraftActivity" />
+        <activity android:name=".backup.SendMailActivity" />
+        <activity android:name=".support.SettingsActivity" />
+        <activity android:name=".sms.SMSActivity" />
+        <activity android:name=".twitter.TwitterActivity" />
+        <activity android:name=".sms.VoiceRecognition" />
+
+    </application>
+
+</manifest>
